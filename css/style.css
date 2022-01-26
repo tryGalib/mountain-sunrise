@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*--
+      - Total Viewport
+-----------------------------------------*/
+
+.view-frame {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #cbebea 10%, #f1f7f6 90%);
+  /* background: linear-gradient(to bottom, #2b4443 10%, #5e8680 90%); */
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+/*--
+      - Mountains
+-----------------------------------------*/
+
+.mountains .mountain-1 {
+  width: 600px;
+  height: 600px;
+  background: #6bc281;
+  position: absolute;
+  left: 12%;
+  top: 60%;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+
+.mountains .mountain-2 {
+	width: 480px;
+	height: 480px;
+	background: #6bc281;
+	position: absolute;
+	left: 33%;
+	top: 72%;
+	transform: rotate(45deg);
+	z-index: 2;
+}
+
+
+.mountains .mountain-3 {
+  width: 550px;
+  height: 550px;
+  background: #6bc281;
+  position: absolute;
+  left: 54%;
+  top: 65%;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+
+/*--
+      - The Sun
+-----------------------------------------*/
+
+.sun {
+  width: 180px;
+  height: 180px;
+  background: #c04616;
+  border-radius: 50%;
+  position: absolute;
+  top: 97%;
+  left: 53%;
+  animation: sun-anime 10s linear infinite alternate;
+  
+}
+
+@keyframes sun-anime {
+  0% {
+    top: 97%;
+    background: #c04616;
+  }
+
+  50% {
+    top: 30%;
+    background: #ec9b21;
+  }
+
+  100% {
+    top: -55%;
+    background: #fdf9c6;
+  }
+}
+
+
+
+/*--
+      - The Clouds
+-----------------------------------------*/
+
+
+/* ----Clouds Common CSS---- */
+
+.rectangle {
+  width: 50%;
+  height: 20%;
+  background-color: #89b7f2;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.circle-1 {
+  width: 20%;
+  height: 20%;
+  background: #89b7f2;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-2 {
+  width: 20%;
+  height: 20%;
+  background: #89b7f2;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-3 {
+  width: 35%;
+  height: 35%;
+  background: #89b7f2;
+  border-radius: 50%;
+  position: absolute;
+  top: 29%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-4 {
+  width: 20%;
+  height: 20%;
+  background: #89b7f2;
+  border-radius: 50%;
+  position: absolute;
+  top: 29%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* ---Cloud 1--- */
+.cloud-1 {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 8%;
+  left: -32%;
+  animation: cloud-anime-1 ease-in-out alternate infinite 7s;
+}
+
+@keyframes cloud-anime-1 {
+  0% {
+    top: 8%;
+    left: -32%;
+    display: none;
+  }
+
+  100% {
+    top: 8%;
+    left: 110%;
+  }
+
+}
+
+
+
+/* ---Cloud 2--- */
+.cloud-2 {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: -5%;
+  left: -45%;
+  animation: cloud-anime-2 ease-in-out infinite 15s;
+}
+
+@keyframes cloud-anime-2 {
+  0% {
+    top: -5%;
+    left: -45%;
+  }
+
+  100% {
+    top: 5%;
+    left: 110%;
+  }
+
+}
+
+
+
+
+/* ---Cloud 3--- */
+.cloud-3 {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 30%;
+  left: 105%;
+  transform: rotateY(180deg);
+  animation: cloud-anime-3 ease-in-out infinite 12s;
+}
+
+@keyframes cloud-anime-3 {
+  0% {
+    top: 30%;
+    left: 105%;
+  }
+
+  100% {
+    top: 5%;
+    left: -17%;
+  }
+
+}
+
+
+
+/* ---Cloud 4--- */
+.cloud-4 {
+  width: 210px;
+  height: 210px;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 17%;
+  left: 140%;
+  animation: cloud-anime-4 ease-in-out alternate infinite 6s;
+}
+
+
+@keyframes cloud-anime-4 {
+  0% {
+    top: 17%;
+    left: 140%;
+  }
+
+  100% {
+    top: 5%;
+    left: -40%;
+  }
+
+}
+
+
+/*--
+      - Birds
+-----------------------------------------*/
+
+.birds img {
+  width: 100px;
+  transform: skewX(-50deg);
+  position: absolute;
+  top: 7%;
+  left: -25%;
+  animation: birds-anime linear infinite 12s;
+}
+
+@keyframes birds-anime {
+  0% {
+    top: 7%;
+    left: -25%;
+  }
+
+  25% {
+    top: 22%;
+    left: 12.5%;
+  }
+
+  50% {
+    top: 7%;
+    left: 50%;
+  }
+
+  75% {
+    top: 22%;
+    left: 87.5%;
+  }
+
+  100% {
+    top: 7%;
+    left: 125%;
+  }
+
+}
+
+
+/*--
+      - Social
+-----------------------------------------*/
+
+.social {
+  height: 100vh;
+  display: flex;
+  z-index: 999;
+  align-items: center;
+}
+
+.social ul {
+  z-index: 999;
+}
+
+.social ul li {
+  list-style-type: none;
+  z-index: 999;
+  margin: 5px 0;
+}
+
+.social ul li a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: url(../img/icon.png) no-repeat;
+  background-size: 555px;
+  z-index: 999;
+  border: 2px solid #878787;
+  transition: all ease .5s;
+  
+}
+
+.social ul li:nth-child(1) a {
+  background-position: 0px 0px;
+}
+
+
+.social ul li:nth-child(1) a:hover {
+  background-position: 0px -50.5px;
+}
+
+
+
+.social ul li:nth-child(2) a {
+  background-position: -403px 0px;
+}
+
+
+.social ul li:nth-child(2) a:hover {
+  background-position: -403px -50.5px;
+}
+
+
+
+.social ul li:nth-child(3) a {
+  background-position: -202px 0px;
+}
+
+
+.social ul li:nth-child(3) a:hover {
+  background-position: -202px -50.5px;
+}
+
+
+
+.social ul li:nth-child(4) a {
+  background-position: -101px 0px;
+}
+
+
+
+.social ul li:nth-child(4) a:hover {
+  background-position: -101px -50.5px;
+}
+
+
+
+.social ul li:nth-child(5) a {
+  background-position: -252px 0px;
+}
+
+
+.social ul li:nth-child(5) a:hover {
+  background-position: -252px -50.5px;
+}
